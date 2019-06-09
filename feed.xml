@@ -1,20 +1,34 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Anivia</title>
+    <description></description>
+    <link>https://infinityld.github.io/chalk</link>
+    <atom:link href="https://infinityld.github.io/chalk/chalk/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>Typora: 体验美妙，瑕不掩瑜</title>
+        <description>我心目中最美好的Markdown编辑器</description>
+        <pubDate>Sun, 09 Jun 2019 00:00:00 +0800</pubDate>
+        <link>https://infinityld.github.io/chalk/chalk/posts/typora-%E4%BD%93%E9%AA%8C%E7%BE%8E%E5%A6%99-%E7%91%95%E4%B8%8D%E6%8E%A9%E7%91%9C</link>
+        <guid isPermaLink="true">https://infinityld.github.io/chalk/chalk/posts/typora-%E4%BD%93%E9%AA%8C%E7%BE%8E%E5%A6%99-%E7%91%95%E4%B8%8D%E6%8E%A9%E7%91%9C</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Something About Summer...</title>
+        <description>夏天还真是让人又爱又恨呢</description>
+        <pubDate>Sat, 08 Jun 2019 00:00:00 +0800</pubDate>
+        <link>https://infinityld.github.io/chalk/chalk/posts/something-about-summer</link>
+        <guid isPermaLink="true">https://infinityld.github.io/chalk/chalk/posts/something-about-summer</guid>
+      </item>
+    
+      <item>
+        <title>Anivia Photography</title>
+        <description>Daily life shutters.</description>
+        <pubDate>Thu, 06 Jun 2019 00:00:00 +0800</pubDate>
+        <link>https://infinityld.github.io/chalk/chalk/posts/anivia-photography</link>
+        <guid isPermaLink="true">https://infinityld.github.io/chalk/chalk/posts/anivia-photography</guid>
+      </item>
+    
   </channel>
 </rss>
